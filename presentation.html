@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./arte.css">
+    <title>Dragons</title>
+</head>
+<body>
+    <img src="./imag/fondo.jpeg" class="mi_fondo" alt="War the Dragons">
+    <h1>"DRAGONES DEL ALBA: LA ULTIMA BATALLA"</h1>
+    <header>
+        <h2>El Ascenso de los Dragones Místicos</h2>
+        <p>"En un mundo donde los cielos están dominados por dragones majestuosos y temibles, el equilibrio de poder está a punto de cambiar. Embárcate en una aventura llena de magia y ferocidad, donde solo el más valiente podrá reclamar el trono de los dragones."</p>
+        <h2 class="elegir">ELIGE TU DRAGON</h2>
+        <main>
+            <img src="./imag/fondo2.jpeg" alt="">
+            <div class="dragon_selection">
+                <label for="Morgoth">Morgoth</label>
+                <input type="radio" name="dragones" id='Morgoth'>
+    
+                <label for="Glaurung">Glaurung</label>
+                <input type="radio" name="dragones" id='Glaurung'>
+        
+                <label for="Ungoliant">Ungoliant</label>
+                <input type="radio" name="dragones" id='Ungoliant'>
+    
+                <label for="Ancalagon">Ancalagon</label>
+                <input type="radio" name="dragones" id='Ancalagon'>
+    
+                <button id='seleccionar-dragon'>START</button>
+            </div>
+        </main>
+    </header>
+    <section>
+        <p>Tu Dragon <span id="dragon-jugador"></span> tiene <span id="vidas-jugador">5</span> vidas</p>
+        <p>El Dragon Enemigo <span id="dragon-enemigo"></span> tiene <samp id="vidas-enemigo">5</samp> vidas</p>
+
+        <h2>ELIGE TU ATAQUE</h2>
+        <p>
+            <button id="boton-fuego">Fuego 🔥</button>
+            <button id="boton-agua">Agua 💦</button>
+            <button id="boton-tierra">Tierra 🌏</button>
+            <button id="boton-viento">Viento 🌪️</button>
+            <button id="boton-rayo">Rayo ⚡</button>
+        </p>
+    </section>
+    <div>
+        <p>Tu Dragon ataco con <span id="ataque-dragon"></span></p>
+        <p>El Dragon Enemigo ataco con <span id="ataque-enemigo"></span></p>
+        <p><span id="mensaje-final"></span></p>
+        <button id="reiniciar-juego">🔁</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
