@@ -9,6 +9,8 @@ seleccionarBotonDragon.addEventListener('click',seleccionarDragonJugador); //est
 let spanDragonJugador = document.getElementById('dragon-jugador')
 let spanDragonEnemigo =  document.getElementById('dragon-enemigo')
 
+let seleccionDragon = document.getElementById('seleccion-dragon')
+
 let seleccionAtaque = document.getElementById('seccion-ataque')
 seleccionAtaque.style.display = 'none'
 
@@ -69,6 +71,7 @@ function seleccionarDragonEnemigo() {
         spanDragonEnemigo.innerHTML = 'Ancalagon';
     }
     seleccionAtaque.style.display = 'block'
+    seleccionDragon.style.display = 'none'
 }
 
 function ataqueFuego() {                                                 
