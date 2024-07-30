@@ -9,6 +9,8 @@ seleccionarBotonDragon.addEventListener('click',seleccionarDragonJugador); //est
 let spanDragonJugador = document.getElementById('dragon-jugador')
 let spanDragonEnemigo =  document.getElementById('dragon-enemigo')
 
+let seleccionAtaque = document.getElementById('seccion-ataque')
+seleccionAtaque.style.display = 'none'
 
 let dragonAleatorioEnemigo = aleatorio(1, 5) //para q la pc escoja un dragon aleatorio(1=morgoth, 2=glaurung,etc)//
 let seleccionarAtaque
@@ -66,6 +68,7 @@ function seleccionarDragonEnemigo() {
     } else {
         spanDragonEnemigo.innerHTML = 'Ancalagon';
     }
+    seleccionAtaque.style.display = 'block'
 }
 
 function ataqueFuego() {                                                 
