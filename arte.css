@@ -70,3 +70,18 @@ button {
     top: 1075px;
     left: 159px;
 }
+.fondo-ataque {
+    width: 1358px;
+    height: 1000px;
+}
+.contador-vidas {
+    position: absolute;
+    top: 8%; 
+    left: 8%; 
+    color: aliceblue;
+    width: 450px;
+    height: 200px;
+
+
+
+}
