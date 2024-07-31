@@ -43,6 +43,7 @@ let spanVidasEnemigo = document.getElementById("vidas-enemigo")
 
 let botonReiniciar = document.getElementById("reiniciar-juego")
 botonReiniciar.addEventListener("click", reiniciarJuego)
+botonReiniciar.style.display = 'none'
 
 function seleccionarDragonJugador() {
     if (inputMorgoth.checked) {
@@ -145,19 +146,21 @@ function combate() {
 function revisarVidas() {
     if (vidasEnemigo === 0) {
         spanMensajeFinal.innerHTML = '¡Felicitaciones Ganaste la BATALLA!';
+        botonReiniciar.style.display = 'block'; // Muestra el botón de reinicio
     }
     else if (vidasJugador === 0) {
         spanMensajeFinal.innerHTML = 'PERDISTE CHANGO, vuelve a intentarlo';
+        botonReiniciar.style.display = 'block'; // Muestra el botón de reinicio
     }
-}
-
-function iniciarJuego() {
-    
 }
 
 function reiniciarJuego() {
     location.reload ()
 }
+
+function iniciarJuego() {
+}
+
 
 function aleatorio(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;

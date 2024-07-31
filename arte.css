@@ -2,6 +2,7 @@
     width: 1358px;
     height: auto;
 }
+
 h1 {
     position: absolute; 
     top: 20px; /* Ajusta esta propiedad para mover el título verticalmente */
@@ -25,7 +26,6 @@ header {
     padding: 20px;
     border-radius: 10px; /* Bordes redondeados del contenedor de texto */
 }
-
 
 .elegir {
     position: absolute; /* Posiciona el elemento de manera absoluta dentro del contenedor main */
@@ -53,6 +53,7 @@ main img {
     border-radius: 150px;
     left: 40px;
 }
+
 .dragon_selection {
     position: absolute;
     top: 1050px;
@@ -69,11 +70,14 @@ main img {
 button {
     top: 1075px;
     left: 159px;
+    background-color: rgb(114, 97, 116);
 }
+
 .fondo-ataque {
     width: 1358px;
     height: 1000px;
 }
+
 .contador-vidas {
     position: absolute;
     top: 8%; 
@@ -81,7 +85,24 @@ button {
     color: aliceblue;
     width: 450px;
     height: 200px;
+}
 
+.elige-ataque {
+    position: absolute;
+    top: 45%; 
+    left: 48%;
+    color: blueviolet;
+    width: 500px;
+    height: 200px;
+}
 
-
+.ataques {
+    position: absolute;
+    top: 90%; 
+    left: 45%;
+}
+.mensajes-ataques {
+    position: absolute;
+    top: 110%; 
+    left: 50%;
 }
