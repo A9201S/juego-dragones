@@ -7,58 +7,58 @@ $header-background: rgba(0, 0, 0, 0.5);
 $text-color-light: rgb(230, 230, 240);
 $text-color-dark: blue;
 
-.mi_fondo{
+.mi_fondo {
     width: 1358px;
     height: auto;
 }
 
 h1 {
     position: absolute; 
-    top: 20px; /* Ajusta esta propiedad para mover el título verticalmente */
-    left: 15%; /* Ajusta la posición horizontalmente */
-    font-size: 3em; /* Cambia el tamaño del texto */
-    width: 900px; /* Tamaño del contenedor */
-    height: auto; /* Ajusta la altura automáticamente según el contenido */
-    text-align: center; /* Centra el texto dentro del contenedor */
-    word-wrap: break-word; /* Permite que el texto se ajuste dentro del contenedor */
-    color: blue;
+    top: 20px; 
+    left: 15%;
+    font-size: $font-size-large;
+    width: 900px;
+    height: auto;
+    text-align: center;
+    word-wrap: break-word;
+    color: $text-color-dark;
 }
 
 header {
-    position: absolute; /* Posiciona el contenido sobre la imagen */
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, 25%); /* Ajusta el contenido para centrarlo completamente */
-    color: #fff; /* Color del texto */
-    text-align: center; /* Centra el texto */
-    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad del texto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    color: #fff;
+    text-align: center;
+    background: $header-background;
     padding: 20px;
-    border-radius: 10px; /* Bordes redondeados del contenedor de texto */
+    border-radius: 10px;
 }
 
 .elegir {
-    position: absolute; /* Posiciona el elemento de manera absoluta dentro del contenedor main */
-    top: 804px; /* Ajusta esta propiedad para mover el título verticalmente */
-    left: 55%; /* Centra horizontalmente el título */
-    transform: translateX(-50%); /* Ajusta la posición horizontal para centrar el título */
-    font-size: 2em; /* Tamaño del texto, ajusta según sea necesario */
-    color: rgb(230, 230, 240); /* Color del texto para que sea visible sobre la imagen */
-    text-align: center; /* Centra el texto dentro del contenedor */
-} 
+    position: absolute;
+    top: 804px;
+    left: 55%;
+    transform: translateX(-50%);
+    font-size: $font-size-medium;
+    color: $text-color-light;
+    text-align: center;
+}
 
 main {
-    position: absolute; /* Posiciona el contenedor main sobre la imagen de fondo */
-    top: 60%; /* Ajusta esta propiedad para mover el contenedor main verticalmente */
-    left: 50%;  /* Ajusta esta propiedad para mover el contenedor main horizontalmente */
-    transform: translateX(-50%); /* Centra horizontalmente el contenedor main */
-    z-index: 1; /* Asegura que el contenedor main esté debajo de otros elementos como el título y el header */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 main img {
-    width: 313px; /* Ajusta el tamaño de la imagen secundaria */
+    width: 313px;
     height: auto;
-    position: relative; /* Para ajustar la imagen dentro del contenedor main */
-    top: 930px; /* Ajusta esta propiedad para mover la imagen verticalmente dentro del contenedor main */
+    position: relative;
+    top: 930px;
     border-radius: 150px;
     left: 40px;
 }
@@ -72,8 +72,8 @@ main img {
     border-radius: 15px;
 }
 
-.dragon_selection label{
-    font-size: 25px; /* Cambia este valor al tamaño de fuente que desees */
+.dragon_selection label {
+    font-size: 25px;
 }
 
 button {
@@ -89,8 +89,8 @@ button {
 
 .contador-vidas {
     position: absolute;
-    top: 8%; 
-    left: 8%; 
+    top: 8%;
+    left: 8%;
     color: aliceblue;
     width: 450px;
     height: 200px;
@@ -98,7 +98,7 @@ button {
 
 .elige-ataque {
     position: absolute;
-    top: 45%; 
+    top: 45%;
     left: 48%;
     color: blueviolet;
     width: 500px;
@@ -107,11 +107,12 @@ button {
 
 .ataques {
     position: absolute;
-    top: 90%; 
+    top: 90%;
     left: 45%;
 }
+
 .mensajes-ataques {
     position: absolute;
-    top: 110%; 
+    top: 110%;
     left: 50%;
 }
